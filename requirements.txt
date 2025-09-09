@@ -1,0 +1,3 @@
+fastmcp
+mcp[server]
+websockets
