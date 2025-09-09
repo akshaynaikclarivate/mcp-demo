@@ -1,3 +1,5 @@
 fastmcp
 mcp[server]
 websockets
+requests
+python-dotenv

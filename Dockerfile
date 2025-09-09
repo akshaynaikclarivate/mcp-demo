@@ -6,6 +6,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY server.py .
+COPY .env .
 
 # Expose the WebSocket port
 EXPOSE 8000
