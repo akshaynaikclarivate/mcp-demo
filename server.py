@@ -42,7 +42,7 @@ def get_biomarker_validity(biomarker: str) -> str:
     response = requests.get(url, auth=HTTPDigestAuth(username, password))
     logger.info(f"username: {username}")
     logger.info(f"password: {password}")
-    logger.info(f"API Response Status Code: {response.status_code}")
+    # logger.info(f"API Response Status Code: {response.status_code}")
     if response.status_code == 200:
         xml_data = response.text
 
@@ -55,7 +55,8 @@ def get_biomarker_validity(biomarker: str) -> str:
             print("No Validity filter found.")
 
     logger.info(f"Checking validity for: {biomarker}")
-    return biomarker.isalpha()
+    return str(biomarker.isalpha())
+
 
 if __name__ == "__main__":
     try:
