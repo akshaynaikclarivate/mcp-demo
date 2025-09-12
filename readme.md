@@ -41,4 +41,4 @@ docker run -p 8000:8000 getaddress-mcp-server
 Url should be the domain of the ec2
 
 # dummy questions that can be asked 
-1. Please find the validity categories of biomarker troponin 
+1.Please find the validity categories of biomarker troponin 
